@@ -4,3 +4,56 @@
 .about-title {
   display: flex;
 }
+
+.navigation {
+  display: flex;
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+}
+.logo {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.logo:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 16px;
+}
+
+.center {
+  display: flex;
+  gap: 1rem;
+  margin: auto;
+  height: 8rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-icon {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-icon-img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.icon:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 16px;
+}

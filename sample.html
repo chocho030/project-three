@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        margin: 20px;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .flex-demo {
+        border: 2px solid #333;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+
+      .title {
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      /* 기본 Flex 컨테이너 */
+      .basic-flex {
+        display: flex;
+        background-color: #520c0c;
+        flex-wrap: wrap;
+        padding: 10px;
+        text-align: center;
+      }
+
+      /* Flex 방향 */
+      .flex-direction {
+        display: flex;
+        flex-direction: column;
+        background-color: #f0f0f0;
+        padding: 10px;
+      }
+
+      /* Flex 정렬 */
+      .flex-justify {
+        display: flex;
+        justify-content: space-between;
+        background-color: #f0f0f0;
+        padding: 10px;
+      }
+
+      .flex-align {
+        display: flex;
+        align-items: center;
+        background-color: #f0f0f0;
+        padding: 10px;
+        height: 100px;
+      }
+
+      /* Flex 아이템 */
+      .flex-item {
+        background-color: #4caf50;
+        color: white;
+        padding: 1rem;
+        width: 4rem;
+        border-radius: 4px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .grow-item {
+        flex: 1;
+      }
+
+      .order-item {
+        order: -1;
+      }
+
+      /* 반응형 Flex */
+      .responsive-flex {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #f0f0f0;
+        padding: 10px;
+      }
+
+      .responsive-item {
+        flex: 1 1 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="flex-demo">
+        <h3 class="title">1. 기본 Flex 컨테이너</h3>
+        <div class="basic-flex">
+          <div class="flex-item">Item 1</div>
+          <div class="flex-item">Item 2</div>
+          <div class="flex-item">Item 3</div>
+          <div class="flex-item">Item 3</div>
+          <div class="flex-item">Item 3</div>
+          <div class="flex-item">Item 3</div>
+          <div class="flex-item">Item 3</div>
+          <div class="flex-item">Item 3</div>
+        </div>
+      </div>
+
+      <div class="flex-demo">
+        <h3 class="title">2. Flex 방향 (flex-direction: column)</h3>
+        <div class="flex-direction">
+          <div class="flex-item">Item 1</div>
+          <div class="flex-item">Item 2</div>
+          <div class="flex-item">Item 3</div>
+        </div>
+      </div>
+
+      <div class="flex-demo">
+        <h3 class="title">3. Flex 정렬 (justify-content: space-between)</h3>
+        <div class="flex-justify">
+          <div class="flex-item">Item 1</div>
+          <div class="flex-item">Item 2</div>
+          <div class="flex-item">Item 3</div>
+        </div>
+      </div>
+
+      <div class="flex-demo">
+        <h3 class="title">4. Flex 수직 정렬 (align-items: center)</h3>
+        <div class="flex-align">
+          <div class="flex-item">Item 1</div>
+          <div class="flex-item">Item 2</div>
+          <div class="flex-item">Item 3</div>
+        </div>
+      </div>
+
+      <div class="flex-demo">
+        <h3 class="title">5. Flex 아이템 속성 (flex-grow, order)</h3>
+        <div class="basic-flex">
+          <div class="flex-item">Normal</div>
+          <div class="flex-item grow-item">Grow: 1</div>
+          <div class="flex-item order-item">Order: -1</div>
+        </div>
+      </div>
+
+      <div class="flex-demo">
+        <h3 class="title">6. 반응형 Flex (flex-wrap)</h3>
+        <div class="responsive-flex">
+          <div class="flex-item responsive-item">Responsive 1</div>
+          <div class="flex-item responsive-item">Responsive 2</div>
+          <div class="flex-item responsive-item">Responsive 3</div>
+          <div class="flex-item responsive-item">Responsive 4</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
